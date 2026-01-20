@@ -1,0 +1,66 @@
+{
+  "agent_id": "restaurant_booking_agent_001",
+  "conversation_id": "conv_abc123booking",
+  "status": "done",
+  "transcript": [
+    {
+      "role": "user",
+      "time_in_call_secs": 0,
+      "message": "Hi, I'd like to book a table at your restaurant for two people this Saturday at 7 PM."
+    },
+    {
+      "role": "agent",
+      "time_in_call_secs": 8,
+      "message": "Sure! Can I get your name, please?"
+    },
+    {
+      "role": "user",
+      "time_in_call_secs": 14,
+      "message": "Yes, it’s Alex Sharma."
+    },
+    {
+      "role": "agent",
+      "time_in_call_secs": 22,
+      "message": "Thanks, Alex. Could you also share a contact phone number?"
+    },
+    {
+      "role": "user",
+      "time_in_call_secs": 30,
+      "message": "My number is +91-9876543210."
+    },
+    {
+      "role": "agent",
+      "time_in_call_secs": 38,
+      "message": "Great! Your table for two at 7 PM this Saturday is confirmed. Anything else I can help with?"
+    }
+  ],
+  "metadata": {
+    "start_time_unix_secs": 1735000000,
+    "call_duration_secs": 45,
+    "user_locale": "en-IN",
+    "booking_details": {
+      "name": "Alex Sharma",
+      "date": "2026-01-24",
+      "time": "19:00",
+      "party_size": 2,
+      "contact_phone": "+91-9876543210"
+    }
+  },
+  "has_audio": true,
+  "has_user_audio": true,
+  "has_response_audio": true,
+  "user_id": "user_98765",
+  "branch_id": null,
+  "version_id": "v1",
+  "analysis": {
+    "call_successful": "success",
+    "transcript_summary": "User booked a table for 2 at 7 PM on Saturday.",
+    "data_collection_results": {
+      "collected_name": "Alex Sharma",
+      "collected_contact_phone": "+91-9876543210",
+      "collected_booking_time": "19:00",
+      "collected_party_size": 2
+    },
+    "call_summary_title": "Restaurant Table Booking"
+  }
+}
