@@ -2,10 +2,10 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-const { sendMessage } = require("./send-wa-msg");
-const { sendEmail } = require("./send-mail");
-const { extractMessage } = require("./extract-message");
-const dummyData = require('./dummy.json')
+const { sendMessage } = require("./services/send-wa-msg");
+const { sendEmail } = require("./services/send-mail");
+const { extractMessage } = require("./helper/extract-message");
+const dummyData = require('./constant/dummy.json')
 
 var transport = nodemailer.createTransport({
   host: process.env.MAILTRAP_HOST,
@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
-app.post("/webhook", async (req, res) => {
+app.post("/webhook/send-notification", async (req, res) => {
   const { whatsappMessage, emailHtml, error } = extractMessage(dummyData);
 
   if (error) {
@@ -52,6 +52,16 @@ app.post("/webhook", async (req, res) => {
     message: "Messages sent successfully"
   });
 });
+
+// Global error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+  });
+})
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
