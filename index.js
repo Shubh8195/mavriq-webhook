@@ -21,6 +21,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.post("/webhook/send-notification", async (req, res) => {
+  console.log("Received webhook:", req.body);
   const { whatsappMessage, emailHtml, error } = extractMessage(dummyData);
 
   if (error) {
@@ -31,15 +32,16 @@ app.post("/webhook/send-notification", async (req, res) => {
   }
 
   try {
-    const results = await Promise.allSettled([
-      // sendMessage("919411187503", whatsappMessage),
-      sendEmail(transport, emailHtml)
-    ]);
-    const rejected = results.filter(r => r.status === 'rejected');
-    if (rejected.length === 2) {
-      console.log("Both messages failed to send.");
-      throw rejected[0].reason;
-    }
+    // const results = await Promise.allSettled([
+    //   sendMessage("919411187503", whatsappMessage),
+    //   sendEmail(transport, emailHtml)
+    // ]);
+
+    // const rejected = results.filter(r => r.status === 'rejected');
+    // if (rejected.length === 2) {
+    //   console.log("Both messages failed to send.");
+    //   throw rejected[0].reason;
+    // }
   } catch (err) {
     console.error("Error sending messages:", err);
     return res.status(500).json({
