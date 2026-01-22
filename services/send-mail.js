@@ -1,7 +1,7 @@
 const sendEmail = async (transport, html) => {
   const info = await transport.sendMail({
-    from: '"Mavriq AI" <mavriq@mavriq.co.in>',
-    to: "client@mavriq.co.in",
+    from: '"Ganesha Bookings" <ganesha@mavriq.co.in>',
+    to: "chauhan.divyansh03@gmail.com",
     subject: "New reservation received",
     text: "New reservation received",
     html,
