@@ -5,7 +5,7 @@ require("dotenv").config();
 const { sendMessage } = require("./services/send-wa-msg");
 const { sendEmail } = require("./services/send-mail");
 const { extractMessage } = require("./helper/extract-message");
-const dummyData = require('./constant/dummy.json')
+// const dummyData = require('./constant/dummy.json')
 
 var transport = nodemailer.createTransport({
   host: process.env.MAILTRAP_HOST,
@@ -21,8 +21,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.post("/webhook/send-notification", async (req, res) => {
-  console.log("Received webhook:", req.body);
-  const { whatsappMessage, emailHtml, error } = extractMessage(dummyData);
+  // console.log("Received webhook:", req.body);
+  const { whatsappMessage, emailHtml, error } = extractMessage(req.body);
 
   if (error) {
     return res.status(400).json({
@@ -32,17 +32,19 @@ app.post("/webhook/send-notification", async (req, res) => {
   }
 
   try {
-    // const results = await Promise.allSettled([
-    //   sendMessage("919411187503", whatsappMessage),
-    //   sendEmail(transport, emailHtml)
-    // ]);
+    const results = await Promise.allSettled([
+      sendMessage("919411187503", whatsappMessage),
+      sendEmail(transport, emailHtml)
+    ]);
 
-    // const rejected = results.filter(r => r.status === 'rejected');
-    // if (rejected.length === 2) {
-    //   console.log("Both messages failed to send.");
-    //   throw rejected[0].reason;
-    // }
+    const rejected = results.filter(r => r.status === 'rejected');
+    if (rejected.length === 2) {
+      console.log("Both messages failed to send.");
+      throw rejected[0].reason;
+    }
   } catch (err) {
+
+
     console.error("Error sending messages:", err);
     return res.status(500).json({
       success: false,

@@ -1,66 +1,1221 @@
 {
-  "agent_id": "restaurant_booking_agent_001",
-  "conversation_id": "conv_abc123booking",
-  "status": "done",
-  "transcript": [
-    {
-      "role": "user",
-      "time_in_call_secs": 0,
-      "message": "Hi, I'd like to book a table at your restaurant for two people this Saturday at 7 PM."
+  "type": "post_call_transcription",
+  "event_timestamp": 1769071945,
+  "data": {
+    "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+    "conversation_id": "conv_5301kfje9x87fmdtryeg8jps67fg",
+    "status": "done",
+    "user_id": "dDGlKTZLDdTYDxZ0E77UAgoZ6np1",
+    "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+    "version_id": "agtvrsn_4301kfjcssbges0vwcdxfgd0fvza",
+    "transcript": [
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Hello! I can help you with reservations and pre-orders.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 0,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.16375823599810246
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "All right. Uh, so are you speaking from Ganesha Restaurant? Are you from Ganesha Restaurant?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 4,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.075597299997753
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "I am an AI assistant designed to help with reservations and orders for various restaurants. Are you looking to make a reservation or place an order with Ganesha Restaurant specifically?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 17,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 1.310076809997554
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 1.1953932739997981
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 1.3100576409997302
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.2912717379949754
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 2777,
+                "price": 0.00041655
+              },
+              "input_cache_read": {
+                "tokens": 0,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 33,
+                "price": 0.0000198
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Yes, you can book a table for six people.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 28,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.08979843099950813
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Certainly! I can help you book a table for six people. Could you please tell me the date and time you would like to make the reservation?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 33,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.7414764679997461
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.7406275710018235
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.795860635000281
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.1730268920000526
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 443,
+                "price": 0.00006645
+              },
+              "input_cache_read": {
+                "tokens": 2378,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 30,
+                "price": 0.000018
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "On twenty-sixth of January at eight PM.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 41,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.07933644900185755
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Great! So that's a reservation for six people on January twenty-sixth at eight PM. May I have your name and phone number to finalize this booking?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 47,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.829493345998344
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.626144021996879
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.8294706539963954
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.28040700999554247
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 482,
+                "price": 0.0000723
+              },
+              "input_cache_read": {
+                "tokens": 2379,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 33,
+                "price": 0.0000198
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Yeah, my name is Divyansh and my phone number is nine four, uh, one one one eight seven five zero three.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 56,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.08818479100591503
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Thank you, Divyansh. Just to confirm, your name is Divyansh and your phone number is nine four one one one eight seven five zero three. Is that correct?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 65,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.75323256199772
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.7528105309975217
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.8997627240023576
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.11923568299971521
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 537,
+                "price": 0.00008054999999999999
+              },
+              "input_cache_read": {
+                "tokens": 2384,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 37,
+                "price": 0.0000222
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Yes.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 74,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.032599954000033904
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Excellent. So, to confirm, I am booking a table for six people under the name Divyansh, with the phone number nine four one one one eight seven five zero three, for January twenty-sixth at eight PM. Does all of that sound correct?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 77,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 1.256424095001421
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 1.2559299319982529
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 1.3135241550044157
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.2721582330050296
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 575,
+                "price": 0.00008625
+              },
+              "input_cache_read": {
+                "tokens": 2385,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 53,
+                "price": 0.0000318
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Yes.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 93,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.038614519995462615
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Wonderful! Your reservation for six people on January twenty-sixth at eight PM under the name Divyansh is now confirmed. Is there anything else I can assist you with today, perhaps placing a pre-order for your table?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 95,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 1.038224760995945
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 1.037782139996125
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 1.1551270409981953
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.10689189300319413
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 627,
+                "price": 0.00009405
+              },
+              "input_cache_read": {
+                "tokens": 2388,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 46,
+                "price": 0.000027599999999999997
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Uh, yes. Uh, actually, uh, there is an-- there is an anniversary. So can you prepare a table with flowers and bouquet with the candles, uh, along with, uh, red velvet cake, uh, and, uh, the cheesecake? Uh, I will be-- need it fresh, totally fresh. And, uh, I want to make the evening grateful.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 107,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.10115079800016247
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "That sounds like a lovely plan for an anniversary celebration! I can certainly add a note to your reservation about the occasion and your request for fresh red velvet and cheesecake. However, for special arrangements like flowers, bouquets, and candles for the table, it would be best to contact the restaurant directly to ensure they can accommodate these personalized touches for your special evening.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 134,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 1.8549270299990894
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 1.8544637989980401
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 2.1699802619987167
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.18060001699632267
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 735,
+                "price": 0.00011025
+              },
+              "input_cache_read": {
+                "tokens": 2404,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 71,
+                "price": 0.0000426
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "Okay.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 156,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.033692290002363734
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Is there anything else I can help you with regarding your reservation or perhaps a pre-order for your table, aside from the special arrangements?",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 159,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.6618002149989479
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.5884886260027997
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.6617814650016953
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.25541684600466397
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 802,
+                "price": 0.0001203
+              },
+              "input_cache_read": {
+                "tokens": 2410,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 28,
+                "price": 0.000016800000000000002
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "user",
+        "agent_metadata": null,
+        "message": "No, thank you.",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 167,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_asr_trailing_service_latency": {
+              "elapsed_time": 0.0388461449983879
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": "audio"
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": "Certainly. Thank you for calling! I hope you have a wonderful anniversary celebration.\n",
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 169,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.8922988300037105
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.8918487550035934
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.8922820880034124
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.21499155199853703
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": null,
+        "multivoice_message": null,
+        "tool_calls": [
+          {
+            "type": "system",
+            "request_id": "end_call_b2c2400a976f431ea9840f0d0737dbf5",
+            "tool_name": "end_call",
+            "params_as_json": "{\"system__message_to_speak\": \"Certainly. Thank you for calling! I hope you have a wonderful anniversary celebration.\", \"reason\": \"User said \\\"No, thank you.\\\" indicating the end of the conversation.\"}",
+            "tool_has_been_called": true,
+            "tool_details": null
+          }
+        ],
+        "tool_results": [],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 169,
+        "conversation_turn_metrics": {
+          "metrics": {
+            "convai_llm_service_ttf_sentence": {
+              "elapsed_time": 0.8922988300037105
+            },
+            "convai_llm_service_ttfb": {
+              "elapsed_time": 0.8918487550035934
+            },
+            "convai_llm_tool_request_generation_latency": {
+              "elapsed_time": 0.24562364599842113
+            },
+            "convai_llm_service_tt_last_sentence": {
+              "elapsed_time": 0.8922820880034124
+            },
+            "convai_tts_service_ttfb": {
+              "elapsed_time": 0.21499155199853703
+            }
+          }
+        },
+        "rag_retrieval_info": null,
+        "llm_usage": null,
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      },
+      {
+        "role": "agent",
+        "agent_metadata": {
+          "agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+          "branch_id": "agtbrch_5601kfb0e917e4nsrb2d9bxr8acj",
+          "workflow_node_id": null
+        },
+        "message": null,
+        "multivoice_message": null,
+        "tool_calls": [],
+        "tool_results": [
+          {
+            "request_id": "end_call_b2c2400a976f431ea9840f0d0737dbf5",
+            "tool_name": "end_call",
+            "result_value": "{\"result_type\":\"end_call_success\",\"status\":\"success\",\"reason\":\"User said \\\"No, thank you.\\\" indicating the end of the conversation.\",\"message\":null}",
+            "is_error": false,
+            "tool_has_been_called": true,
+            "tool_latency_secs": 0.5016992550008581,
+            "error_type": "",
+            "dynamic_variable_updates": [],
+            "type": "system",
+            "result": {
+              "result_type": "end_call_success",
+              "status": "success",
+              "reason": "User said \"No, thank you.\" indicating the end of the conversation.",
+              "message": null
+            }
+          }
+        ],
+        "feedback": null,
+        "llm_override": null,
+        "time_in_call_secs": 174,
+        "conversation_turn_metrics": null,
+        "rag_retrieval_info": null,
+        "llm_usage": {
+          "model_usage": {
+            "gemini-2.5-flash": {
+              "input": {
+                "tokens": 836,
+                "price": 0.00012539999999999999
+              },
+              "input_cache_read": {
+                "tokens": 2409,
+                "price": 0
+              },
+              "input_cache_write": {
+                "tokens": 0,
+                "price": 0
+              },
+              "output_total": {
+                "tokens": 59,
+                "price": 0.0000354
+              }
+            }
+          }
+        },
+        "interrupted": false,
+        "original_message": null,
+        "source_medium": null
+      }
+    ],
+    "metadata": {
+      "start_time_unix_secs": 1769071768,
+      "accepted_time_unix_secs": 1769071769,
+      "call_duration_secs": 176,
+      "cost": 1194,
+      "deletion_settings": {
+        "deletion_time_unix_secs": null,
+        "deleted_logs_at_time_unix_secs": null,
+        "deleted_audio_at_time_unix_secs": null,
+        "deleted_transcript_at_time_unix_secs": null,
+        "delete_transcript_and_pii": false,
+        "delete_audio": false
+      },
+      "feedback": {
+        "type": null,
+        "overall_score": null,
+        "likes": 0,
+        "dislikes": 0,
+        "rating": null,
+        "comment": null
+      },
+      "authorization_method": "authorization_header",
+      "charging": {
+        "dev_discount": true,
+        "is_burst": false,
+        "tier": "grant_tier_2_2025_07_23",
+        "llm_usage": {
+          "irreversible_generation": {
+            "model_usage": {
+              "gemini-2.5-flash": {
+                "input": {
+                  "tokens": 7814,
+                  "price": 0.0011721
+                },
+                "input_cache_read": {
+                  "tokens": 19137,
+                  "price": 0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0
+                },
+                "output_total": {
+                  "tokens": 390,
+                  "price": 0.000234
+                }
+              }
+            }
+          },
+          "initiated_generation": {
+            "model_usage": {
+              "gemini-2.5-flash": {
+                "input": {
+                  "tokens": 16531,
+                  "price": 0.0024796499999999995
+                },
+                "input_cache_read": {
+                  "tokens": 23928,
+                  "price": 0
+                },
+                "input_cache_write": {
+                  "tokens": 0,
+                  "price": 0
+                },
+                "output_total": {
+                  "tokens": 563,
+                  "price": 0.00033779999999999997
+                }
+              }
+            }
+          }
+        },
+        "llm_price": 0.0028174499999999996,
+        "llm_charge": 24,
+        "call_charge": 1170,
+        "free_minutes_consumed": 0,
+        "free_llm_dollars_consumed": 0
+      },
+      "phone_call": null,
+      "batch_call": null,
+      "termination_reason": "end_call tool was called.",
+      "error": null,
+      "warnings": [],
+      "main_language": "en",
+      "rag_usage": null,
+      "text_only": false,
+      "features_usage": {
+        "language_detection": {
+          "enabled": true,
+          "used": false
+        },
+        "transfer_to_agent": {
+          "enabled": false,
+          "used": false
+        },
+        "transfer_to_number": {
+          "enabled": false,
+          "used": false
+        },
+        "multivoice": {
+          "enabled": false,
+          "used": false
+        },
+        "dtmf_tones": {
+          "enabled": true,
+          "used": false
+        },
+        "external_mcp_servers": {
+          "enabled": false,
+          "used": false
+        },
+        "pii_zrm_workspace": false,
+        "pii_zrm_agent": false,
+        "tool_dynamic_variable_updates": {
+          "enabled": false,
+          "used": false
+        },
+        "is_livekit": false,
+        "voicemail_detection": {
+          "enabled": true,
+          "used": false
+        },
+        "workflow": {
+          "enabled": false,
+          "tool_node": {
+            "enabled": false,
+            "used": false
+          },
+          "standalone_agent_node": {
+            "enabled": false,
+            "used": false
+          },
+          "phone_number_node": {
+            "enabled": false,
+            "used": false
+          },
+          "end_node": {
+            "enabled": false,
+            "used": false
+          }
+        },
+        "agent_testing": {
+          "enabled": false,
+          "tests_ran_after_last_modification": false,
+          "tests_ran_in_last_7_days": false
+        },
+        "versioning": {
+          "enabled": true,
+          "used": false
+        }
+      },
+      "eleven_assistant": {
+        "is_eleven_assistant": false
+      },
+      "initiator_id": "dDGlKTZLDdTYDxZ0E77UAgoZ6np1",
+      "conversation_initiation_source": "react_sdk",
+      "conversation_initiation_source_version": "0.12.3",
+      "timezone": null,
+      "async_metadata": null,
+      "whatsapp": null,
+      "agent_created_from": "ui",
+      "agent_last_updated_from": "ui"
     },
-    {
-      "role": "agent",
-      "time_in_call_secs": 8,
-      "message": "Sure! Can I get your name, please?"
+    "analysis": {
+      "evaluation_criteria_results": {},
+      "data_collection_results": {
+        "table": {
+          "data_collection_id": "table",
+          "value": "6",
+          "json_schema": {
+            "type": "string",
+            "description": "When user reserve table show here like table: for 4 people. just show number here for how much people they want a table.",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user requested a table for six people. Therefore, the value is '6'."
+        },
+        "order": {
+          "data_collection_id": "order",
+          "value": "red velvet cake and cheesecake",
+          "json_schema": {
+            "type": "string",
+            "description": "If user order something for food in case they want a ready food before reaching to restro. ",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user ordered a red velvet cake and a cheesecake to be fresh for their anniversary celebration. This indicates that the user wants to pre-order food before reaching the restaurant."
+        },
+        "name": {
+          "data_collection_id": "name",
+          "value": "Divyansh",
+          "json_schema": {
+            "type": "string",
+            "description": "collect the name of customer",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user provides their name as 'Divyansh' during the conversation when asked for their name to finalize the booking. This is extracted as the customer name."
+        },
+        "contact_number": {
+          "data_collection_id": "contact number",
+          "value": "9411187503",
+          "json_schema": {
+            "type": "string",
+            "description": "collect the contact number of person who is making booking",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user provided their phone number 'nine four, uh, one one one eight seven five zero three' during the conversation when asked for contact information to finalize the booking. This information is extracted as the contact number of the person making the booking."
+        },
+        "booking_time_and_date": {
+          "data_collection_id": "Booking Time and Date",
+          "value": "26/01/2026 at 8PM.",
+          "json_schema": {
+            "type": "string",
+            "description": "Collect the booking time and date",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user specified the booking time and date as 'On twenty-sixth of January at eight PM.'"
+        },
+        "status": {
+          "data_collection_id": "Status",
+          "value": true,
+          "json_schema": {
+            "type": "boolean",
+            "description": "If user ask to cancel everything mark this false but if everything is smooth mark this true",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user successfully booked a table and requested some additional services. The conversation ended smoothly without any cancellations. Therefore, the value should be true."
+        }
+      },
+      "evaluation_criteria_results_list": [],
+      "data_collection_results_list": [
+        {
+          "data_collection_id": "table",
+          "value": "6",
+          "json_schema": {
+            "type": "string",
+            "description": "When user reserve table show here like table: for 4 people. just show number here for how much people they want a table.",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user requested a table for six people. Therefore, the value is '6'."
+        },
+        {
+          "data_collection_id": "order",
+          "value": "red velvet cake and cheesecake",
+          "json_schema": {
+            "type": "string",
+            "description": "If user order something for food in case they want a ready food before reaching to restro. ",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user ordered a red velvet cake and a cheesecake to be fresh for their anniversary celebration. This indicates that the user wants to pre-order food before reaching the restaurant."
+        },
+        {
+          "data_collection_id": "name",
+          "value": "Divyansh",
+          "json_schema": {
+            "type": "string",
+            "description": "collect the name of customer",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user provides their name as 'Divyansh' during the conversation when asked for their name to finalize the booking. This is extracted as the customer name."
+        },
+        {
+          "data_collection_id": "contact number",
+          "value": "9411187503",
+          "json_schema": {
+            "type": "string",
+            "description": "collect the contact number of person who is making booking",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user provided their phone number 'nine four, uh, one one one eight seven five zero three' during the conversation when asked for contact information to finalize the booking. This information is extracted as the contact number of the person making the booking."
+        },
+        {
+          "data_collection_id": "Booking Time and Date",
+          "value": "On twenty-sixth of January at eight PM.",
+          "json_schema": {
+            "type": "string",
+            "description": "Collect the booking time and date",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user specified the booking time and date as 'On twenty-sixth of January at eight PM.'"
+        },
+        {
+          "data_collection_id": "Status",
+          "value": true,
+          "json_schema": {
+            "type": "boolean",
+            "description": "If user ask to cancel everything mark this false but if everything is smooth mark this true",
+            "enum": null,
+            "is_system_provided": false,
+            "dynamic_variable": "",
+            "constant_value": ""
+          },
+          "rationale": "The user successfully booked a table and requested some additional services. The conversation ended smoothly without any cancellations. Therefore, the value should be true."
+        }
+      ],
+      "call_successful": "success",
+      "transcript_summary": "The user booked a table for six at Ganesha Restaurant for January 26th at 8 PM under the name Divyansh. The user requested flowers, a bouquet with candles, red velvet cake, and cheesecake for an anniversary. The agent advised contacting the restaurant directly for the special arrangements but noted the cake request. The call ended after the user confirmed no further assistance was needed.\n",
+      "call_summary_title": "Restaurant table booking"
     },
-    {
-      "role": "user",
-      "time_in_call_secs": 14,
-      "message": "Yes, it’s Alex Sharma."
+    "conversation_initiation_client_data": {
+      "conversation_config_override": {
+        "turn": null,
+        "tts": {
+          "voice_id": null,
+          "stability": null,
+          "speed": null,
+          "similarity_boost": null
+        },
+        "conversation": {
+          "text_only": null
+        },
+        "agent": {
+          "first_message": null,
+          "language": "en",
+          "prompt": null
+        }
+      },
+      "custom_llm_extra_body": {},
+      "user_id": "dDGlKTZLDdTYDxZ0E77UAgoZ6np1",
+      "source_info": {
+        "source": "react_sdk",
+        "version": "0.12.3"
+      },
+      "dynamic_variables": {
+        "system__agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+        "system__agent_turns": 10,
+        "system__current_agent_turns": 10,
+        "system__current_subagent_turns": 10,
+        "system__current_agent_id": "agent_6301kfb0e7bjfagv0qm8q42frpsw",
+        "system__conversation_id": "conv_5301kfje9x87fmdtryeg8jps67fg",
+        "system__call_duration_secs": 175,
+        "system__time_utc": "2026-01-22T08:52:24.251763+00:00",
+        "system__time": "Thursday, 08:52 22 January 2026",
+        "system__timezone": null,
+        "system__caller_id": null,
+        "system__called_number": null,
+        "system__call_sid": null
+      }
     },
-    {
-      "role": "agent",
-      "time_in_call_secs": 22,
-      "message": "Thanks, Alex. Could you also share a contact phone number?"
-    },
-    {
-      "role": "user",
-      "time_in_call_secs": 30,
-      "message": "My number is +91-9876543210."
-    },
-    {
-      "role": "agent",
-      "time_in_call_secs": 38,
-      "message": "Great! Your table for two at 7 PM this Saturday is confirmed. Anything else I can help with?"
-    }
-  ],
-  "metadata": {
-    "start_time_unix_secs": 1735000000,
-    "call_duration_secs": 45,
-    "user_locale": "en-IN",
-    "booking_details": {
-      "name": "Alex Sharma",
-      "date": "2026-01-24",
-      "time": "19:00",
-      "party_size": 2,
-      "contact_phone": "+91-9876543210"
-    }
-  },
-  "has_audio": true,
-  "has_user_audio": true,
-  "has_response_audio": true,
-  "user_id": "user_98765",
-  "branch_id": null,
-  "version_id": "v1",
-  "analysis": {
-    "call_successful": "success",
-    "transcript_summary": "User booked a table for 2 at 7 PM on Saturday.",
-    "data_collection_results": {
-      "collected_name": "Alex Sharma",
-      "collected_contact_phone": "+91-9876543210",
-      "collected_booking_time": "19:00",
-      "collected_party_size": 2
-    },
-    "call_summary_title": "Restaurant Table Booking"
+    "has_audio": true,
+    "has_user_audio": true,
+    "has_response_audio": true
   }
 }
