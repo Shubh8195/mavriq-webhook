@@ -18,6 +18,7 @@ var transport = nodemailer.createTransport({
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const API_URL = process.env.API_URL || "http://localhost";
 app.use(express.json());
 
 app.post("/webhook/send-notification", async (req, res) => {
@@ -68,5 +69,5 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on ${API_URL}:${PORT}`);
 });
