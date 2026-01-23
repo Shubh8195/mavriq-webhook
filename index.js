@@ -1,5 +1,6 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 require("dotenv").config();
 
 const { sendMessage } = require("./services/send-wa-msg");
@@ -19,7 +20,15 @@ var transport = nodemailer.createTransport({
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL || "http://localhost";
+
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: [/\.elevenlabs\.io$/],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  })
+);
 
 app.post("/webhook/send-notification", async (req, res) => {
   // console.log("Received webhook:", req.body);
