@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "cors": "^2.8.6",
+    "mailtrap": "^4.4.0",
     "nodemailer": "^7.0.12"
   }
 }

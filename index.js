@@ -1,20 +1,18 @@
 const express = require("express");
-const nodemailer = require("nodemailer");
+const { MailtrapClient } = require("mailtrap");
 const cors = require("cors");
 require("dotenv").config();
 
 const { sendMessage } = require("./services/send-wa-msg");
 const { sendEmail } = require("./services/send-mail");
 const { extractMessage } = require("./helper/extract-message");
-// const dummyData = require('./constant/dummy.json')
 
-var transport = nodemailer.createTransport({
-  host: process.env.MAILTRAP_HOST,
-  port: process.env.MAILTRAP_PORT,
-  auth: {
-    user: process.env.MAILTRAP_USER,
-    pass: process.env.MAILTRAP_PASS,
-  }
+const TOKEN = process.env.MAILTRAP_TOKEN;
+
+const transport = new MailtrapClient({
+  token: "11ad44003a2e46f5bf8e6d6372f465d6",
+  // sandbox: true,
+  // testInboxId: 4149893,
 });
 
 const app = express();
@@ -31,7 +29,6 @@ app.use(
 );
 
 app.post("/webhook/send-notification", async (req, res) => {
-  // console.log("Received webhook:", req.body);
   const { whatsappMessage, emailHtml, error } = extractMessage(req.body);
 
   if (error) {
